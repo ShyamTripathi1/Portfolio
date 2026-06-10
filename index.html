@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Tripathi | Portfolio</title>
+    <meta name="description" content="Portfolio of Shyam Tripathi – Web Developer, Problem Solver and B.Tech CSE student at PSIT Kanpur.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">ST</div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#problem-solving">Problem Solving</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text animate-left">
+                <h1 class="hero-heading">
+                    <span class="white">Hello, I'm </span><br>
+                    <span class="gradient-text typed-wrapper"><span class="typed-text"></span></span>
+                </h1>
+                <p class="hero-desc">
+                    B.Tech student seeking an entry-level opportunity to apply strong foundational knowledge in Data Structures, Algorithms, Web Development and System Design. Eager to solve real-world problems by building efficient, scalable and optimized solutions.
+                </p>
+                <div class="hero-btns">
+                    <button class="btn-hire" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+                    <a href="2301641540177.pdf" download target="_blank" rel="noopener noreferrer" class="btn-resume-wrap">
+                        <span class="btn-resume">Download Resume</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-img-wrap animate-right">
+                <img src="profile.jpg" alt="Shyam Tripathi" class="hero-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div class="about-img-col animate-left">
+                <img src="about_tech.png?v=2" alt="About Shyam" class="about-img">
+            </div>
+            <div class="about-text-col animate-right">
+                <h2 class="section-heading">About Me</h2>
+                <p class="about-p">I am a Computer Science and Engineering student at Pranveer Singh Institute of Technology (PSIT), Kanpur, with strong foundations in Data Structures and Algorithms and hands-on experience in full-stack web development. I enjoy building scalable, user-focused applications using modern technologies.</p>
+                <br>
+                <p class="about-p">I have solved <span class="purple-bold">1000+ problems</span> on LeetCode, GeeksforGeeks and HackerRank, which has strengthened my problem-solving skills. I am actively seeking opportunities to contribute to real-world projects and grow as an engineer.</p>
+
+                <!-- Tabs -->
+                <div class="tabs-row">
+                    <button class="tab-btn active" data-tab="skills-tab">Skills</button>
+                    <button class="tab-btn" data-tab="education-tab">Education</button>
+                    <button class="tab-btn" data-tab="certs-tab">Certifications</button>
+                </div>
+
+                <!-- Skills Tab -->
+                <div class="tab-content active" id="skills-tab">
+                    <ul class="about-list">
+                        <li><span class="list-label">Programming Languages:</span> C++, Python, JavaScript</li>
+                        <li><span class="list-label">Frontend:</span> React.js, Next.js, HTML5, CSS3, Tailwind CSS</li>
+                        <li><span class="list-label">Backend:</span> Node.js, Express.js, REST APIs, Authentication & Authorization</li>
+                        <li><span class="list-label">Databases:</span> SQL (MySQL), Google Cloud Platform</li>
+                        <li><span class="list-label">Tools:</span> Git, GitHub, Microsoft Visual Studio, Jupyter Notebook</li>
+                        <li><span class="list-label">Core CS:</span> DSA, Problem Solving, Object-Oriented Design, DBMS, OS, Low-Level Design</li>
+                        <li><span class="list-label">Soft Skills:</span> Leadership, Team Player, Adaptable, Analytical Thinker, Detail-Oriented</li>
+                    </ul>
+                </div>
+
+                <!-- Education Tab -->
+                <div class="tab-content" id="education-tab">
+                    <ul class="about-list">
+                        <li><span class="list-label">B.Tech in Computer Science and Engineering (Data Science)</span> — Pranveer Singh Institute of Technology, Kanpur<br>2023 – 2027 &nbsp;|&nbsp; Score: 84.48%</li>
+                        <br>
+                        <li><span class="list-label">Senior Secondary Education (Class XII)</span> — Lucknow Public School, Hardoi<br>2022 – 2023 &nbsp;|&nbsp; Score: 82.2%</li>
+                        <br>
+                        <li><span class="list-label">Secondary Education (Class X)</span> — Lucknow Public School, Hardoi<br>2020 – 2021 &nbsp;|&nbsp; Score: 93.66%</li>
+                    </ul>
+                </div>
+
+                <!-- Certifications Tab -->
+                <div class="tab-content" id="certs-tab">
+                    <ul class="about-list">
+                        <li><strong>CodeWars of Tekron 2.0</strong> – Newton School of Technology</li>
+                        <li><strong>Online MCQ Assessment + Coding</strong> – Adobe India Hackathon</li>
+                        <li><strong>HTML, CSS, JavaScript</strong> – Infosys Springboard</li>
+                        <li><strong>Winner of AI Agent Builders Award 2026</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM SOLVING -->
+    <section id="problem-solving" class="section">
+        <div class="container ps-layout">
+            <!-- Left Side: Badge -->
+            <div class="ps-left animate-left">
+                <h3 class="knight-title">Congratulations<br>365 Days Badge!</h3>
+                <div class="badge-wrapper">
+                    <img src="https://assets.leetcode.com/static_assets/marketing/lg365.png" alt="365 Days Badge" class="knight-img">
+                </div>
+            </div>
+            
+            <!-- Right Side: Stats -->
+            <div class="ps-right animate-right">
+                <h2 class="section-heading ps-main-title">Problem Solving</h2>
+                <p class="ps-desc">I actively practice competitive programming on LeetCode with a strong focus on Data Structures, Algorithms, and problem-solving consistency. Through disciplined daily practice and continuous learning, I have solved 751+ coding problems across various difficulty levels. Earning the <span style="color: #c084fc; font-weight: bold;">365 Days Badge</span> reflects my dedication to maintaining a consistent coding habit and continuously improving my analytical and problem-solving skills.</p>
+                
+                <h3 class="ps-sub-title">Problem Stats From Leetcode <a href="https://leetcode.com/u/ShyamTripathi12/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; margin-left:10px;"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 24px; height: 24px; background: white; border-radius: 4px; padding: 2px;"></a></h3>
+                
+                <div class="ps-stat-box full-width">
+                    <span class="ps-label text-yellow">Total Problems Solved till now</span>
+                    <span class="ps-value text-green" id="lc-total">—</span>
+                </div>
+                
+                <div class="ps-stats-grid">
+                    <div class="ps-stat-box">
+                        <span class="ps-label text-blue">Easy</span>
+                        <span class="ps-value text-green" id="lc-easy">—</span>
+                    </div>
+                    <div class="ps-stat-box">
+                        <span class="ps-label text-yellow">Medium</span>
+                        <span class="ps-value text-green" id="lc-medium">—</span>
+                    </div>
+                    <div class="ps-stat-box">
+                        <span class="ps-label text-red">Hard</span>
+                        <span class="ps-value text-green" id="lc-hard">—</span>
+                    </div>
+                </div>
+                
+                <div class="ps-stat-box full-width">
+                    <span class="ps-label text-yellow">Global Ranking</span>
+                    <span class="ps-value text-green" id="lc-ranking">—</span>
+                </div>
+
+                <a href="https://leetcode.com/u/ShyamTripathi12/" target="_blank" rel="noopener noreferrer" class="leetcode-profile-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 20px; height: 20px; background: white; border-radius: 3px; padding: 2px;">
+                    View My LeetCode Profile &nbsp;↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-heading center animate-up">My Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card animate-up">
+                    <div class="project-img-wrap">
+                        <img src="ai_interview.png?v=2" alt="AI Interview Agent" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ShyamTripathi1" target="_blank" rel="noopener noreferrer" class="overlay-icon" title="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h5 class="project-title">AI Interview Agent</h5>
+                        <p class="project-desc">An AI-powered mock interview platform for real-time technical practice featuring AI-based evaluation.</p>
+                        <div class="project-tags">
+                            <span>MERN Stack</span><span>Firebase</span><span>Vercel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-up">
+                    <div class="project-img-wrap">
+                        <img src="hero_image.png" alt="AI Exam Notes Generator" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://ai-notes-generator-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-icon" title="Visit Site">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h5 class="project-title">AI Exam Notes Generator</h5>
+                        <p class="project-desc">Notes Generator using Next.js and Groq (Llama 3.3) for generating structured, exam-ready study material and MCQs.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span><span>Groq API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card animate-up">
+                    <div class="project-img-wrap">
+                        <img src="travel_tour.png?v=6" alt="Travel & Tour Website" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ShyamTripathi1" target="_blank" rel="noopener noreferrer" class="overlay-icon" title="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h5 class="project-title">Travel &amp; Tour Website</h5>
+                        <p class="project-desc">Responsive travel website with modern UI components, video backgrounds, and interactive animations.</p>
+                        <div class="project-tags">
+                            <span>React.js</span><span>AOS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+        <div class="contact-blob"></div>
+        <div class="container contact-grid">
+            <div class="contact-left animate-up">
+                <h2 class="section-heading">Let's Connect</h2>
+                <p class="contact-p">I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-socials">
+                    <a href="https://github.com/ShyamTripathi1" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shyam-tripathi-8a708a315" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:tripathishyam86@gmail.com" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right animate-up">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" placeholder="you@gmail.com" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Just saying hi" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Let's talk about..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>All rights reserved by Shyam Tripathi</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- LeetCode Live Stats Fetcher -->
+    <script>
+        (function() {
+            const USERNAME = 'ShyamTripathi12';
+            const CACHE_KEY = 'leetcode_stats_cache';
+            const IDS = ['lc-total', 'lc-easy', 'lc-medium', 'lc-hard', 'lc-ranking'];
+
+            // Animated counter
+            function animateCount(el, target) {
+                if (!el || target == null) return;
+                const num = parseInt(target);
+                if (isNaN(num)) { el.textContent = target; return; }
+                let start = 0;
+                const duration = 1000;
+                const step = Math.max(1, Math.ceil(num / (duration / 16)));
+                const timer = setInterval(() => {
+                    start += step;
+                    if (start >= num) {
+                        el.textContent = num.toLocaleString();
+                        clearInterval(timer);
+                    } else {
+                        el.textContent = start.toLocaleString();
+                    }
+                }, 16);
+            }
+
+            // Show stats on page (with animation)
+            function showStats(data, animate) {
+                const fields = [
+                    { id: 'lc-total',   val: data.total },
+                    { id: 'lc-easy',    val: data.easy },
+                    { id: 'lc-medium',  val: data.medium },
+                    { id: 'lc-hard',    val: data.hard },
+                    { id: 'lc-ranking', val: data.ranking }
+                ];
+                fields.forEach(f => {
+                    const el = document.getElementById(f.id);
+                    if (!el) return;
+                    if (animate) {
+                        animateCount(el, f.val);
+                    } else {
+                        el.textContent = typeof f.val === 'number' ? f.val.toLocaleString() : f.val;
+                    }
+                });
+            }
+
+            // Show loading state
+            function showLoading() {
+                IDS.forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el && el.textContent === '\u2014') el.textContent = '...';
+                });
+            }
+
+            // Save to localStorage cache
+            function saveCache(data) {
+                try {
+                    data.cachedAt = Date.now();
+                    localStorage.setItem(CACHE_KEY, JSON.stringify(data));
+                } catch(e) {}
+            }
+
+            // Load from localStorage cache
+            function loadCache() {
+                try {
+                    const cached = localStorage.getItem(CACHE_KEY);
+                    if (cached) return JSON.parse(cached);
+                } catch(e) {}
+                return null;
+            }
+
+            // Fetch with timeout
+            function fetchWithTimeout(url, ms) {
+                return Promise.race([
+                    fetch(url),
+                    new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+                ]);
+            }
+
+            // API 1: alfa-leetcode-api (primary, most reliable)
+            async function tryAlfaAPI() {
+                const [solvedRes, profileRes] = await Promise.all([
+                    fetchWithTimeout(`https://alfa-leetcode-api.onrender.com/${USERNAME}/solved`, 60000),
+                    fetchWithTimeout(`https://alfa-leetcode-api.onrender.com/${USERNAME}`, 60000)
+                ]);
+                if (solvedRes.ok && profileRes.ok) {
+                    const solved = await solvedRes.json();
+                    const profile = await profileRes.json();
+                    return {
+                        total: solved.solvedProblem || 0,
+                        easy: solved.easySolved || 0,
+                        medium: solved.mediumSolved || 0,
+                        hard: solved.hardSolved || 0,
+                        ranking: profile.ranking || 0
+                    };
+                }
+                throw new Error('alfa API failed');
+            }
+
+            // API 2: leetcode-api-faisalshohag (backup)
+            async function tryFaisalAPI() {
+                const res = await fetchWithTimeout(`https://leetcode-api-faisalshohag.vercel.app/${USERNAME}`, 15000);
+                if (res.ok) {
+                    const d = await res.json();
+                    return {
+                        total: d.totalSolved || 0,
+                        easy: d.easySolved || 0,
+                        medium: d.mediumSolved || 0,
+                        hard: d.hardSolved || 0,
+                        ranking: d.ranking || 0
+                    };
+                }
+                throw new Error('faisal API failed');
+            }
+
+            // API 3: leetcode-stats-api (backup)
+            async function tryHerokuAPI() {
+                const res = await fetchWithTimeout(`https://leetcode-stats-api.herokuapp.com/${USERNAME}`, 15000);
+                if (res.ok) {
+                    const d = await res.json();
+                    if (d.status === 'success') {
+                        return {
+                            total: d.totalSolved || 0,
+                            easy: d.easySolved || 0,
+                            medium: d.mediumSolved || 0,
+                            hard: d.hardSolved || 0,
+                            ranking: d.ranking || 0
+                        };
+                    }
+                }
+                throw new Error('heroku API failed');
+            }
+
+            // Main function
+            async function init() {
+                // Step 1: Instantly show cached data (no wait)
+                const cached = loadCache();
+                if (cached) {
+                    showStats(cached, false);
+                } else {
+                    showLoading();
+                }
+
+                // Step 2: Fetch live data from APIs (try all 3 in order)
+                const apis = [tryAlfaAPI, tryFaisalAPI, tryHerokuAPI];
+                for (const apiFn of apis) {
+                    try {
+                        const liveData = await apiFn();
+                        saveCache(liveData);
+                        showStats(liveData, true);
+                        console.log('LeetCode stats loaded live!');
+                        return;
+                    } catch(e) {
+                        console.log('API attempt failed:', e.message);
+                    }
+                }
+
+                // Step 3: If all APIs fail and no cache, show hardcoded fallback
+                if (!cached) {
+                    showStats({ total: 760, easy: 339, medium: 350, hard: 71, ranking: 72002 }, false);
+                }
+                console.log('Using cached/fallback LeetCode stats');
+            }
+
+            document.addEventListener('DOMContentLoaded', init);
+        })();
+    </script>
+</body>
+</html>
