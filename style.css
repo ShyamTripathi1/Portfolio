@@ -417,6 +417,11 @@ img {
     color: var(--purple);
 }
 
+.blue-bold {
+    font-weight: 700;
+    color: var(--blue);
+}
+
 /* Tabs */
 .tabs-row {
     display: flex;
